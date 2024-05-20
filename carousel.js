@@ -10,8 +10,8 @@ const text = [
 ];
 const color = ["#4890D1", "#4BB54F", "#AF4F60"];
 const textBgColor = ["#001C64bd", "#004D08bd", "#4D001Cbd"];
-const image = ["/images/carro1img.webp", "/images/carro2img.webp", "/images/carro3img.webp"];
-const bg = ['url("/images/carro1bg.webp")', 'url("/images/carro2bg.webp")', 'url("/images/carro3bg.webp")'];
+const image = ["images/carro1img.webp", "images/carro2img.webp", "imagescarro3img.webp"];
+const bg = ['url("images/carro1bg.webp")', 'url("images/carro2bg.webp")', 'url("images/carro3bg.webp")'];
 
 let carousel = document.getElementById("carousel"),
     carouselHead = document.getElementById("carouselHead"),
