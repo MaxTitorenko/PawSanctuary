@@ -93,7 +93,7 @@ header{
     justify-content: center;
     justify-content: space-between;
     background-color: #4890D1;
-    background-image: url("/images/carro1bg.webp");
+    background-image: url("images/carro1bg.webp");
     padding: 0;
     background-repeat: no-repeat;
     background-position: center;
