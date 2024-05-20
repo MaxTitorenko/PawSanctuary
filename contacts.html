@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/siteLogo.webp" />
+    <title>Paw Sanctuary|Contacts</title>
+</head>
+<body>
+    <header>
+        <nav class="top-menu container">
+            <a class="top-menu-item" href="index.html">Home</a>
+            <a class="top-menu-item" href="adopt.html">Adopt</a>
+            <img class="top-menu-logo" src="/images/topLogo.webp">
+            <a class="top-menu-item  active-page" href="contacts.html">Contacts</a>
+            <a class="top-menu-item" href="#" id="donateOpen">Donate</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="contacts-head">
+            <div class="line"></div>
+            <h1 class="contacts-header">Adopt</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="contacts-content">
+
+            <div class="contacts-info">
+                <p><b>Office Address:</b> 729 Beverley Rd <br>
+                    729 Beverley Rd, Hull HU6 7EY, UK</p>
+                <p><b>Phone Number:</b> (000) 000 - 0000</p>
+
+                <div class="contacts-socials">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/footerfb.webp"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/footerinst.webp"></a>
+                    <a href="https://mail.google.com" target="_blank"><img src="images/footermail.webp"></a>
+                </div>
+            </div>
+
+            <div class="contacts-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.64463470580966!2d-0.3573777764507043!3d53.7770900513909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878be552ad97ec1%3A0xcfb04b1b614b2ee8!2s729%20Beverley%20Rd%2C%20Hull%20HU6%207EY%2C%20UK!5e0!3m2!1sen!2sua!4v1715767388897!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-top container">
+            <h1 class="footer-logo-name">Paw</br>Sanctuary</h1>
+            <img src="images/footerlogo.webp">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/footerfb.webp"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/footerinst.webp"></a>
+                <a href="https://mail.google.com" target="_blank"><img src="images/footermail.webp"></a>
+            </div>
+        </div>
+        <p class="footer-copyright">©Paw Sanctuary 2024</p>
+    </footer>
+
+    <div class="modal hidden" id="donateModal">
+        <div class="donate-modal">
+            <div class="modal-close" id="donateClose">
+                <div class="modal-close-line-1"></div>
+                <div class="modal-close-line-2"></div>
+            </div>
+            <h1 class="donate-head">Donate</h1>
+            <div class="donate-content">
+                <p>All the paws of our sanctuary are in a constant need of food and toys to keep them happy and satisfied. <br>
+                    Any monetary help is very apreciated, you can also send toys and snacks to our P.O. box. <br>
+                    Thank you for contributing to a good cause!
+                </p>
+                <div class="donate-options">
+                    <div>
+                        <h2>Monetary help</h2>
+                        <form class="donate-form">
+                            <div class="donate-section">
+                                <p class="donate-pound">£</p>
+                                <input class="donate-money-input" type="number" placeholder="1 to 1000" id="donateInput" min="1" max="1000">
+                            </div>
+
+                            <div class="donate-buttons">
+                                <a href="" id="donate10">10£</a>
+                                <a href="" id="donate50">50£</a>
+                                <a href="" id="donate100">100£</a>
+                                <a href="" id="donate250">250£</a>
+                                <a href="" id="donate500">500£</a>
+                                <a href="" id="donate1000">1000£</a>
+                            </div>
+
+                            <div class="donate-inputs">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" autocomplete="off" placeholder="Name..." minlength="2" maxlength="20" required>
+                            </div>
+
+                            <div class="donate-inputs"> 
+                                <label for="secondName">Second Name</label>
+                                <input type="text" name="secondName" autocomplete="off" placeholder="Second name..." minlength="2" maxlength="20" required>
+                            </div>
+
+                            <div class="donate-inputs">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" autocomplete="off" placeholder="example@mail.net" minlength="1" maxlength="50" required>
+                            </div>
+
+                            <div class="donate-inputs">
+                                <label for="comm">Comment (Optional)</label>
+                                <textarea class="donate-input-comment" name="comm" placeholder="Your comment...(max 250 symbols)" minlength="1" maxlength="250"></textarea>
+                            </div>
+                            <div class="donate-send-container">
+                                <input class="donate-send donate-form-button" type="submit" value="Send Donation">
+                                <input class="donate-reset donate-form-button" type="reset" value="Reset Form">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h2>P.O box</h2>
+                        <h3>Paw Sanctuary <br>
+                            729 Beverley Rd <br>
+                            729 Beverley Rd, Hull HU6 7EY, UK <br>
+                            Box #108</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
