@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/siteLogo.webp" />
-    <title>Paw Sanctuary | Adopt</title>
+    <title>Paw Sanctuary|Adopt</title>
 </head>
 <body>
     <header>
@@ -24,69 +24,66 @@
     <main class="container">
         <div class="adopt-head">
             <div class="line"></div>
-            <h1 class="adopt-header">Adopt</h1>
+            <h1 class="adopt-header" id="profileHeader"></h1>
             <div class="line"></div>
         </div>
 
-        <div class="adopt-interface">
-            <div class="adopt-sort">
-                <h2>Sort</h2>
-
-                <div class="sort-section">
-                    <h3>Species:</h3>
-                    <a href="" class="sort-button">Dogs</a>
-                    <a href="" class="sort-button">Cats</a>
-                    <a href="" class="sort-button">Other</a>
+        <div class="profile-content">
+            <div class="profile-gallery">
+                <div class="gallery-main">
+                    <a id="prevImg" class="gallery-change" href=""><</a>
+                    <img id="displayedImg" class="gallery-main-displayed">
+                    <a id="nextImg" class="gallery-change" href="">></a>
                 </div>
 
-                <div class="sort-section">
-                    <h3>Gender:</h3>
-                    <a href="" class="sort-button">Male</a>
-                    <a href="" class="sort-button">Female</a>
-                </div>
+                <div class="gallery-images" id="imageContainer">
 
-                <div class="sort-section">
-                    <h3>Age:</h3>
-                    <a href="" class="sort-button">Young</a>
-                    <a href="" class="sort-button">Adult</a>
-                    <a href="" class="sort-button">Senior</a>
                 </div>
             </div>
 
-            <div class="adopt-listings">
+            <div class="profile-info">
+                <div class="profile-description">
+                    <h2 id="profileBreed"></h2>
+                    <h2>About <span id="profileName"></span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere justo at lorem gravida, vel semper elit suscipit. Nam maximus, felis sagittis iaculis ornare, nisl urna scelerisque quam, in consequat erat urna vel ex. Sed ac nisl a est placerat egestas. Aliquam erat volutpat. Sed dictum commodo diam, eget maximus dui venenatis non. Maecenas leo sem, mattis nec porta vel, malesuada id dui. Maecenas sit amet metus nisl. <br> <br>
+
+                        Duis dignissim nulla mollis venenatis dignissim. In pellentesque viverra erat, id gravida massa eleifend nec. Nulla in orci iaculis, pretium diam vel, feugiat neque. Ut venenatis quis tellus a lobortis. Morbi eu blandit lorem, eget aliquam nisi. Aliquam erat volutpat. Phasellus et interdum felis. Vestibulum imperdiet semper venenatis. Nunc in tempor erat, id fermentum tortor. Sed egestas mattis arcu vitae pharetra. Donec ornare gravida dictum. Vestibulum purus nulla, ultrices in pharetra eu, laoreet in dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum leo eros, convallis vel massa ut, bibendum lacinia turpis. <br> <br>
+                        
+                        Nam justo sapien, dapibus eget molestie non, gravida ac sem. Phasellus ut condimentum lorem. Curabitur leo lacus, pretium nec felis ut, facilisis commodo odio. Phasellus vitae tincidunt augue. Sed accumsan nibh sed elementum iaculis. Nulla vitae tortor vitae odio tempor rutrum et in ante. Donec euismod diam eget aliquet feugiat. Duis vestibulum, tortor eget varius efficitur, tellus nunc commodo lorem, eu feugiat eros tortor eget enim. Fusce vulputate dolor ipsum, ut interdum nisl ornare a. Integer vehicula, diam at lacinia porttitor, justo ipsum malesuada dolor, vel lacinia elit nulla eget augue. Vestibulum vulputate mi et arcu congue faucibus.
+                        </p>
+                </div>
                 
-                <a href="animalprofile.html#1">
-                    <div class="adopt-card">
-                        <img class="card-image" src="images/Rockstar/photo2.webp">
-                        <p class="card-pet-name female">Rockstar</p>
-                        <p class="card-animal-desc">Domestic short hair</p>
-                        <p class="card-animal-desc">Looking for love</p>
-                        <p class="card-animal-desc">729 Beverly</p>
+                <div class="profile-adopt">
+                    <div class="profile-card">
+                        <div class="profile-card-section">
+                            <h2>Rescue Group:</h2>
+                            <p>Paw Sanctuary</p>
+                        </div>
+
+                        <div class="profile-card-section">
+                            <h2>Location:</h2>
+                            <p>729 Beverley Rd <br>
+                                729 Beverley Rd, Hull HU6 7EY, UK</p>
+                        </div>
+
+                        <div class="profile-card-section">
+                            <h2>Age:</h2>
+                            <p id="profileAge"></p>
+                        </div>
+
+                        <div class="profile-card-section">
+                            <h2>Adoption Fee:</h2>
+                            <p>£ <span id="profileFee"></span></p>
+                        </div>
+
+                        <div class="profile-card-section">
+                            <h2>Pre-Adoption Check:</h2>
+                            <p><span id="profileDesexed"></span> Desexed</p>
+                            <p><span id="profileVaccinated"></span> Vaccinated</p>
+                        </div>
                     </div>
-                </a>
-
-                <a href="animalprofile.html#2">
-                    <div class="adopt-card">
-                        <img class="card-image" src="images/Barbie/photo4.jpg">
-                        <p class="card-pet-name female">Barbie</p>
-                        <p class="card-animal-desc">German Shepherd</p>
-                        <p class="card-animal-desc">Smart and loving</p>
-                        <p class="card-animal-desc">729 Beverly</p>
-                    </div>
-                </a>
-
-                <a href="animalprofile.html#3">
-                    <div class="adopt-card">
-                        <img class="card-image" src="images/Pepe/photo1.jpg">
-                        <p class="card-pet-name male">Pepe</p>
-                        <p class="card-animal-desc">Ferret</p>
-                        <p class="card-animal-desc">Loves to play</p>
-                        <p class="card-animal-desc">729 Beverly</p>
-                    </div>
-                </a>
-
-
-                <a class="load-more" href="">Load More +</a>
+                    <a class="profile-adopt-button" href="">Adopt Now</a>
+                </div>
             </div>
         </div>
     </main>
@@ -172,6 +169,14 @@
         </div>
     </div>
 
+    <div class="modal nothing-here hidden" id="nothingHere">
+        <div class="nothing-here-container container">
+            <img src="images/nothinghere.jpg">
+            <h1>Nothing here, please go back to the previous page</h1>
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
+    <script src="profile.js"></script>
 </body>
 </html>

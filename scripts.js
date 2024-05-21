@@ -43,12 +43,14 @@ donateOpen.addEventListener("click", function(event){
     event.preventDefault()
     donateModal.classList.remove("hidden")
     disableScroll()
+    document.body.style.overflowY = "hidden"
 })
 
 donateClose.addEventListener("click", function(event){
     event.preventDefault()
     donateModal.classList.add("hidden")
     enableScroll()
+    document.body.style.overflowY = "auto"
 })
 
 // Donate

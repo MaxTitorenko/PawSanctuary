@@ -336,7 +336,7 @@ footer{
 }
 
 .sort-button:hover{
-    background-color: #ACFF58;
+    background-color: #04ff008c;
 }
 
 .adopt-sort, .sort-button, .adopt-card{
@@ -356,15 +356,23 @@ footer{
 }
 
 .card-image{
-    max-width: 250px;
-    max-height: 250px;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
     border-radius: 60px;
 }
 
 .card-pet-name{
     text-align: center;
-    color: #FF8181;
     font-size: 1.5em;
+}
+
+.female{
+    color: #FF8181;
+}
+
+.male{
+    color: #0072d6;
 }
 
 .card-animal-desc{
@@ -401,6 +409,139 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+/* Animal profile */
+
+.profile-gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.gallery-main{
+    padding: 1em 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-main-displayed{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.gallery-change{
+    background-color: var(--secondary-text-color);
+    color: #ffffff;
+    padding: .3em .6em;
+    border-radius: 100%;
+    font-size: 1.2em;
+    margin: 0 .2em;
+}
+
+.gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-items: center;
+}
+
+.gallery-image{
+    margin: 0 .5em;
+    margin-bottom: .5em;
+    opacity: 70%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.active-image{
+    opacity: 100%;
+}
+
+.profile-content{
+    margin-bottom: 1em;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-description{
+    width: 60%;
+}
+
+.profile-description h2{
+    color: var(--main-text-color);
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.profile-description p{
+    font-size: 1.2em;
+    line-height: 130%;
+    color: var(--secondary-text-color);
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 45px;
+}
+
+.profile-card:first-child{
+    margin-top: .5em;
+}
+
+.profile-card-section{
+    margin-bottom: .5em;
+}
+
+.profile-card h2{
+    color: var(--main-text-color);
+    font-weight: 600;
+    margin-bottom: .3em;
+}
+
+.profile-card p{
+    color: var(--secondary-text-color);
+    font-size: 1.2em;
+}
+
+.positive{
+    color: #04ff008c;
+    font-weight: 700;
+}
+
+.negative{
+    color: #FF0000;
+    font-weight: 700;
+}
+
+.profile-adopt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-adopt-button{
+    background-color: #04ff008c;
+    border-radius: 45px;
+    font-size: 1.5em;
+    color: var(--secondary-text-color);
+    padding: 1em 2em;
+    margin-top: 1em;
+    transition: .3s ease;
+}
+
+.profile-card, .profile-adopt-button{
+    box-shadow: #00000010 -7px 7px 4px;
 }
 
 /* Modals */
@@ -597,20 +738,32 @@ footer{
 }
 
 .donate-send{
-    background-color: #99ff33;
+    background-color: #04ff008c;
 }
 
 .donate-reset{
     background-color: #ff5252;
 }
 
-.donate-send:hover{
+.donate-send:hover, .profile-adopt-button:hover{
     background-color: #58b100;
     color: #ffffff;
 }
 
 .donate-reset:hover{
     background-color: #b80000;
+    color: #ffffff;
+}
+
+.nothing-here{
+    background-color: #000000;
+}
+
+.nothing-here-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
 }
 
