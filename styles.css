@@ -43,6 +43,15 @@ a{
     border-radius: 100px;
 }
 
+.mobile-button{
+    display: none;
+}
+
+.mobile-button img{
+    width: 50px;
+    filter: invert(34%) sepia(24%) saturate(1151%) hue-rotate(343deg) brightness(90%) contrast(90%);
+}
+
 .hidden{
     display: none !important;
 }
@@ -98,6 +107,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .carousel-text-container{
@@ -135,7 +145,7 @@ header{
     right: 0;
     margin: 0 auto;
     width: 220px;
-    bottom: 1em;
+    bottom: .5em;
 }
 
 .carousel-selector-button{
@@ -311,6 +321,10 @@ footer{
     background-color: #FFF8D6;
 }
 
+.adopt-listings *{
+    margin-bottom: 1em;
+}
+
 .adopt-sort *{
     margin-bottom: .6em;
 }
@@ -335,8 +349,23 @@ footer{
     transition: .5s ease;
 }
 
-.sort-button:hover{
+.sort-toggle{
+    background-color: #ffffff;
+    color: var(--secondary-text-color);
+    font-size: 1.5em;
+    padding: .5em 1em;
+    border-radius: 45px;
+    align-self: center;
+    transition: .5s ease;
+    display: none;
+}
+
+.sort-button:hover, .sort-toggle:hover{
     background-color: #04ff008c;
+}
+
+.active-button{
+    background-color: #04ff008c
 }
 
 .adopt-sort, .sort-button, .adopt-card{
@@ -406,6 +435,7 @@ footer{
 }
 
 .contacts-info{
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -582,11 +612,11 @@ footer{
     top: 40px;
 }
 
-.modal-close-line-1{
+.modal-close-line-1, .modal-close-line-1-mobile{
     transform: rotateZ(45deg);
 }
 
-.modal-close-line-2{
+.modal-close-line-2, .modal-close-line-2-mobile{
     transform: rotateZ(-45deg);
 }
 
@@ -767,6 +797,31 @@ footer{
     color: #ffffff;
 }
 
+.mobile-menu{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 5em;
+}
+
+.modal-close-line-1-mobile, .modal-close-line-2-mobile{
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--main-text-color);
+    content: " ";
+    align-self: center;
+    right: 25px;
+    top: 40px;
+}
+
 /* Scrollbar */
 
 /* width */
@@ -790,4 +845,299 @@ footer{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+
+  @media(max-width: 1600px){
+    .donate-modal{
+        width: 70%;
+    }
+  }
+
+  @media(max-width: 1400px){
+    .impact-card{
+        width: 300px;
+        height: 300px;
+        background-size: 80%;
+    }
+
+    .impact-card p {
+        font-size: 2em;
+        font-weight: 500;
+    }
+  }
+
+  @media(max-width: 1280px) {
+    .carousel-img{
+        height: 500px;
+    }
+
+    .carousel-text-container{
+        max-height: 400px;
+    }
+
+    .carousel-text-container p{
+        font-size: 1.3em;
+    }
+
+    .about-card img{
+        width: 300px;
+    }
+  }
+
+  @media(max-width: 1200px) {
+    .about-card p{
+        font-size: 1.3em;
+    }
+
+    .donate-modal{
+        width: 85%;
+    }
+  }
+
+  @media(max-width: 1100px){
+    .impact-card{
+        width: 250px;
+        height: 250px;
+    }
+
+    .impact-card p {
+        font-size: 1.5em;
+    }
+
+    .contacts-map{
+        width: 50%;
+    }
+
+    .adopt-interface{
+        flex-direction: column;
+    }
+
+    .adopt-sort{
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-around;
+        margin-bottom: 1em;
+    }
+
+    .adopt-sort h2{
+        display: none;
+    }
+
+    .sort-toggle{
+        display: block;
+    }
+
+    .adopt-listings{
+        width: 100%;
+        justify-content: center;
+    }
+
+  }
+
+  @media(max-width: 1000px) {
+    .line{
+        width: 30%;
+    }
+  }
+
+  @media(max-width: 950px) {
+    .top-menu-logo{
+        width: 180px;
+    }
+
+    .footer-logo-name{
+        font-size: 2em;
+        width: 200px;
+    }
+
+    .footer-logo{
+        width: 200px;
+    }
+
+    .footer-socials{
+        width: 200px;
+    }
+
+    .footer-socials img{
+        width: 40px;
+    }
+  }
+
+  @media(max-width: 935px) {
+    .impact-card{
+        width: 200px;
+        height: 200px;
+    }
+
+    .impact-card p {
+        font-size: 1.2em;
+    }
+
+    .donate-modal{
+        width: 95%;
+    }
+  }
+
+  @media(max-width: 900px) {
+    .top-menu-item{
+        font-size: 1.2em;
+    }
+  }
+
+  @media(max-width: 870px) {
+    .carousel-img{
+        display: none;
+    }
+
+    .carousel{
+        height: 350px;
+    }
+
+    .carousel-text-container{
+        margin: 0;
+    }
+
+    .carousel{
+        justify-content: center;
+    }
+
+    .carousel-selector-button{
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-selected{
+        width: 19px;
+        height: 19px;
+    }
+
+    .carousel-selector{
+        width: 200px;
+    }
+
+    .carousel-text-container{
+        max-height: 280px;
+    }
+
+    .carousel-text-container h1{
+        font-size: 1.3em;
+    }
+
+    .contacts-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts-info{
+        align-items: center;
+    }
+
+    .contacts-info p{
+        margin-bottom: 1em;
+    }
+
+    .contacts-map, .contacts-info{
+        width: 100%;
+    }
+  }
+
+  @media(max-width: 835px){
+    .donate-options{
+        flex-direction: column-reverse;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .impact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .impact-card{
+        width: 400px;
+        height: 400px;
+    }
+
+    .impact-card p {
+        font-size: 1.5em;
+    }
+  }
+
+  @media(max-width: 735px) {
+    .about-card img{
+        width: 200px;
+    }
+
+    .about-card p{
+        font-size: 1em;
+    }
+  }
+
+  @media(max-width: 670px){
+    .footer-top{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .footer-logo-name{
+        margin-bottom: .5em;
+    }
+
+    .footer-logo{
+        margin-bottom: 1em;
+    }
+
+    .footer-socials{
+        width: 300px;
+        text-align: center;
+    }
+
+    .footer-socials img{
+        margin-left: 1em;
+    }
+  }
+
+  @media(max-width: 610px){
+    .carousel-text-container{
+        margin: auto .2em;
+    }
+  }
+
+  @media(max-width: 600px){
+    .top-menu-item{
+        display: none;
+    }
+
+    .mobile-button{
+        display: block;
+    }
+
+    .top-menu{
+        justify-content: space-between;
+    }
+  }
+
+  @media(max-width: 550px){
+    .about-card{
+        flex-direction: column;
+    }
+  }
+
+  @media(max-width: 540px){
+    .carousel{
+        height: 500px;
+    }
+
+    .carousel-text-container{
+        max-height: 450px;
+    }
+  }
+
+  @media(max-width: 490px){
+    .about-header, .adopt-header, .impact-header, .contacts-header{
+        font-size: 1.5em;
+    }
   }

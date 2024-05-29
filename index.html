@@ -18,6 +18,7 @@
             <img class="top-menu-logo" src="images/topLogo.webp">
             <a class="top-menu-item" href="contacts.html">Contacts</a>
             <a class="top-menu-item" href="#" id="donateOpen">Donate</a>
+            <a class="mobile-button" id="mobileOpen" href=""><img src="images/mobile.svg"></a>
         </nav>
     </header>
 
@@ -94,7 +95,7 @@
         <div class="footer-top container">
             <h1 class="footer-logo-name">Paw </br>
                 Sanctuary</h1>
-            <img src="images/footerlogo.webp">
+            <img class="footer-logo" src="images/footerlogo.webp">
             <div class="footer-socials">
                 <a href="https://www.facebook.com" target="_blank"><img src="images/footerfb.webp"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="images/footerinst.webp"></a>
@@ -105,6 +106,19 @@
     </footer>
 
     <!-- Modals -->
+
+    <div class="modal mobile-menu hidden" id="mobileMenu">
+        <div id="mobileClose">
+            <div class="modal-close-line-1-mobile"></div>
+            <div class="modal-close-line-2-mobile"></div>
+        </div>
+        <div class="mobile-menu-items">
+            <a class="mobile-menu-item active-page" href="index.html">Home</a>
+            <a class="mobile-menu-item" href="adopt.html">Adopt</a>
+            <a class="mobile-menu-item" href="contacts.html">Contacts</a>
+            <a class="mobile-menu-item" href="" id="donateOpenMobile">Donate</a>
+        </div>
+    </div>
 
     <div class="modal hidden" id="donateModal">
         <div class="donate-modal">
@@ -162,7 +176,7 @@
                         </form>
                     </div>
 
-                    <div>
+                    <div class="donate-box">
                         <h2>P.O box</h2>
                         <h3>Paw Sanctuary <br>
                             729 Beverley Rd <br>

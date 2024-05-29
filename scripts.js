@@ -1,6 +1,12 @@
 let donateOpen = document.getElementById("donateOpen"),
     donateClose = document.getElementById("donateClose"),
-    donateModal = document.getElementById("donateModal")
+    donateModal = document.getElementById("donateModal"),
+    donateOpenMobile = document.getElementById("donateOpenMobile"),
+    mobileOpen = document.getElementById("mobileOpen"),
+    mobileClose = document.getElementById("mobileClose"),
+    mobileMenu = document.getElementById("mobileMenu"),
+    sortButton = document.getElementById("sortButton"),
+    sortInterface = document.getElementById("sortInterface")
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
@@ -40,17 +46,43 @@ function enableScroll() {
 }
 
 donateOpen.addEventListener("click", function(event){
-    event.preventDefault()
-    donateModal.classList.remove("hidden")
-    disableScroll()
-    document.body.style.overflowY = "hidden"
+  event.preventDefault()
+  donateModal.classList.remove("hidden")
+  disableScroll()
+  document.body.style.overflowY = "hidden"
 })
 
 donateClose.addEventListener("click", function(event){
-    event.preventDefault()
-    donateModal.classList.add("hidden")
-    enableScroll()
-    document.body.style.overflowY = "auto"
+  event.preventDefault()
+  donateModal.classList.add("hidden")
+  enableScroll()
+  document.body.style.overflowY = "auto"
+})
+
+donateOpenMobile.addEventListener("click", function(event){
+  event.preventDefault()
+  donateModal.classList.remove("hidden")
+  disableScroll()
+  document.body.style.overflowY = "hidden"
+})
+
+mobileOpen.addEventListener("click", function(event){
+  event.preventDefault()
+  mobileMenu.classList.remove("hidden")
+  disableScroll()
+  document.body.style.overflowY = "hidden"
+})
+
+mobileClose.addEventListener("click", function(event){
+  event.preventDefault()
+  mobileMenu.classList.add("hidden")
+  enableScroll()
+  document.body.style.overflowY = "auto"
+})
+
+sortButton.addEventListener("click", function(event){
+  event.preventDefault()
+  sortInterface.classList.toggle("hidden")
 })
 
 // Donate
@@ -91,4 +123,67 @@ donate500.addEventListener("click", function(event){
 donate1000.addEventListener("click", function(event){
   event.preventDefault()
   donateInput.value = 1000
+})
+
+let dogs = document.getElementById("dogs"),
+    cats = document.getElementById("cats"),
+    other = document.getElementById("other"),
+    male = document.getElementById("male"),
+    female = document.getElementById("female"),
+    young = document.getElementById("young"),
+    adult = document.getElementById("adult"),
+    senior = document.getElementById("senior")
+
+dogs.addEventListener("click", function(event){
+  event.preventDefault()
+  dogs.classList.toggle("active-button")
+  cats.classList.remove("active-button")
+  other.classList.remove("active-button")
+})
+
+cats.addEventListener("click", function(event){
+  event.preventDefault()
+  cats.classList.toggle("active-button")
+  dogs.classList.remove("active-button")
+  other.classList.remove("active-button")
+})
+
+other.addEventListener("click", function(event){
+  event.preventDefault()
+  other.classList.toggle("active-button")
+  cats.classList.remove("active-button")
+  dogs.classList.remove("active-button")
+})
+
+male.addEventListener("click", function(event){
+  event.preventDefault()
+  male.classList.toggle("active-button")
+  female.classList.remove("active-button")
+})
+
+female.addEventListener("click", function(event){
+  event.preventDefault()
+  female.classList.toggle("active-button")
+  male.classList.remove("active-button")
+})
+
+young.addEventListener("click", function(event){
+  event.preventDefault()
+  young.classList.toggle("active-button")
+  adult.classList.remove("active-button")
+  senior.classList.remove("active-button")
+})
+
+adult.addEventListener("click", function(event){
+  event.preventDefault()
+  adult.classList.toggle("active-button")
+  young.classList.remove("active-button")
+  senior.classList.remove("active-button")
+})
+
+senior.addEventListener("click", function(event){
+  event.preventDefault()
+  senior.classList.toggle("active-button")
+  adult.classList.remove("active-button")
+  young.classList.remove("active-button")
 })
