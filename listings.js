@@ -11,6 +11,7 @@ for(pet in animals){
         cardAdress = document.createElement("p")
 
     link.href = "animalprofile.html" + "#" + (parseInt(pet) + 1)
+    link.classList.add("adopt-link")
     card.classList.add("adopt-card")
     cardImg.classList.add("card-image")
     cardImg.src = animals[pet].pictures[0]
@@ -50,6 +51,7 @@ function fillPlaceholderCards(quant){
             cardAdress = document.createElement("p")
 
         link.href = "animalprofile.html"
+        link.classList.add("adopt-link")
         card.classList.add("adopt-card")
         cardImg.classList.add("card-image")
         cardImg.src = "images/adoptcardplaceholder.webp"
@@ -73,6 +75,7 @@ function fillPlaceholderCards(quant){
         card.appendChild(cardDescription)
         card.appendChild(cardAdress)
     }
+    allListings = document.querySelectorAll("a.adopt-link")
 }
 
 fillPlaceholderCards(20 - animals.length)

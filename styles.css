@@ -449,6 +449,10 @@ footer{
     align-items: flex-start;
 }
 
+.profile-description{
+    padding: .5em;
+}
+
 .gallery-main{
     padding: 1em 0;
     background-color: #ffffff;
@@ -979,6 +983,22 @@ footer{
     }
   }
 
+  @media(max-width: 915px){
+    .profile-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-main{
+        margin-bottom: .5em;
+    }
+
+    .gallery-images{
+        width: 100%;
+        justify-content: center;
+    }
+  }
+
   @media(max-width: 900px) {
     .top-menu-item{
         font-size: 1.2em;
@@ -1065,6 +1085,16 @@ footer{
     }
   }
 
+  @media(max-width: 750px){
+    .profile-info{
+        flex-direction: column;
+    }
+
+    .profile-description{
+        width: 100%;
+    }
+  }
+
   @media(max-width: 735px) {
     .about-card img{
         width: 200px;
@@ -1117,6 +1147,15 @@ footer{
 
     .top-menu{
         justify-content: space-between;
+    }
+
+    .gallery-main-displayed{
+        width: 300px;
+        height: 300px;
+    }
+
+    .gallery-image{
+        width: 100px;
     }
   }
 
