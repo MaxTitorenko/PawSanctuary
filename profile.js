@@ -16,10 +16,10 @@ let images = ["images/Rockstar/photo1.webp",
                 "images/Rockstar/photo3.webp",
                 "images/Rockstar/photo4.webp"]
 
-let images2 = ["images/Barbie/photo1.webp",
+let images2 = ["images/Barbie/photo1.jpg",
                 "images/Barbie/photo2.jpg",
                 "images/Barbie/photo3.webp",
-                "images/Barbie/photo4.jpg",
+                "images/Barbie/photo4.webp",
                 "images/Barbie/photo5.webp",
                 "images/Barbie/photo6.webp"]
 
@@ -146,5 +146,3 @@ nextImg.addEventListener("click", function(event){
     i += 1
     buttonLogic()
 })
-
-
