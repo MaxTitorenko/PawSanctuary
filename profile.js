@@ -21,6 +21,7 @@ let images2 = ["images/Barbie/photo1.jpg",
                 "images/Barbie/photo2.jpg",
                 "images/Barbie/photo3.webp",
                 "images/Barbie/photo4.webp",
+                "images/Barbie/photo4.webp",
                 "images/Barbie/photo5.webp",
                 "images/Barbie/photo6.webp"]
 
